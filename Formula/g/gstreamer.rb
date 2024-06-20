@@ -4,13 +4,13 @@ class Gstreamer < Formula
   license all_of: ["LGPL-2.0-or-later", "LGPL-2.1-or-later", "MIT"]
 
   stable do
-    url "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.4/gstreamer-1.24.4.tar.bz2"
-    sha256 "247d039af81eab2f0d7cdf56bf505d47db0f91b0f97f9b4c0e9cf80c2b60dd4a"
+    url "https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.24.5/gstreamer-1.24.5.tar.bz2"
+    sha256 "1fae9176cc2845f82539961176dc9b01f7bb853649be4e01bd18fe49aee61fcc"
 
     # When updating this resource, use the tag that matches the GStreamer version.
     resource "rs" do
-      url "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.24.4/gst-plugins-rs-gstreamer-1.24.4.tar.bz2"
-      sha256 "695e26658f36d2e9ba014693de50a9705e0c3469ca74e44579d0a75f711ee5fb"
+      url "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs/-/archive/gstreamer-1.24.5/gst-plugins-rs-gstreamer-1.24.5.tar.bz2"
+      sha256 "709ba5da5f24a550b2cc76806967680304d9ec0aba528f06274685f1664dd107"
 
       # Backport support for newer `dav1d`
       patch do
