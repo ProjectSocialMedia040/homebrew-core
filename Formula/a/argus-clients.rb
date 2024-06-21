@@ -1,8 +1,8 @@
 class ArgusClients < Formula
   desc "Audit Record Generation and Utilization System clients"
   homepage "https://openargus.org"
-  url "https://github.com/openargus/clients/archive/refs/tags/v3.0.8.4.tar.gz"
-  sha256 "1e71e1ec84a311af4ac6c6c9e7a3231e10591e215b84d7e0841735b11db3127a"
+  url "https://github.com/openargus/clients/archive/refs/tags/v5.0.0.tar.gz"
+  sha256 "c695e69f8cfffcb6ed978f1f29b1292a2638e4882a66ea8652052ba1e42fe8bc"
   license "GPL-2.0-or-later"
 
   bottle do
@@ -27,7 +27,6 @@ class ArgusClients < Formula
 
   def install
     ENV.append_to_cflags "-I#{Formula["libtirpc"].opt_include}/tirpc" if OS.linux?
-    ENV.append "CFLAGS", "-std=gnu89"
     system "./configure", "--prefix=#{prefix}"
     system "make"
     system "make", "install"
